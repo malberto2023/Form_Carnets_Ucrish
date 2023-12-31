@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de Carnet || UCRISH</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700;900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/LOGO-UCRISH-PNG.png">
+</head>
+
+<body>
+
+    <div class="cont-estetica ">
+        <div class="img"></div>
+        <div class="app">
+            <header class="header">
+                <h1>App Solicitud Creación de Carnet</h1>
+                <hr>
+                <p class="parr">A continuación Rellenar los campos del Formulario...</p>
+                
+
+                <!--ETIQUETAS DEL FORMULARIO -->
+                <form class="formulario" action="conexion2.php" method="post" enctype="multipart/form-data">
+                
+                    <!--ETIQUETA DEL CAMPO #1 con Nombres y Apellidos-->
+                    <div class="campo">
+                        <label class="campo__label" for="nombre">Nombre:</label>
+                        <input class="campo__field" type="text" name="nombre" placeholder="Tu nombre completo" required>
+                    </div>
+                
+                    <!--ETIQUETA DEL CAMPO #2 con Nombres de la Carrera del Estudiante-->
+                    <div class="campo">
+                        <label class="campo__label" for="nombre">Carrera:</label>
+                        <input class="campo__field" type="text" name="carrera" placeholder="Digite su Carrera" required>
+                    </div>
+                
+                    <!--ETIQUETA DEL CAMPO #3 con la Cuenta del Estudiante-->
+                    <div class="campo">
+                        <label class="campo__label" for="nombre">#Cuenta:</label>
+                        <input class="campo__field" type="text" name="cuenta" placeholder="Digite su # cuenta" required>
+                    </div>
+                
+                    <!--ETIQUETA DEL CAMPO #4 con el Correo agregado-->
+                    <div class="campo">
+                        <label class="campo__label" for="correo">E-Mail:</label>
+                        <input class="campo__field" type="email" name="email" placeholder="Digite su correo " required>
+                    </div>
+
+                     <!--ETIQUETA DEL CAMPO #5 con la fecha-->
+                     <div class="campo">
+                        <label class="campo__label" for="correo">Fecha:</label>
+                        <input class="campo__field" type="date" name="fecha" placeholder="Digite su correo " required>
+                    </div>
+                
+                    <!--ETIQUETA DEL CAMPO #6 DATOS ADJUNTOS....-->
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Adjuntar foto:</span>
+                        </div>
+                        <div class="custom-file">
+                            <input type="file" name="archivo" id="my_file" class="custom-file-input" required>
+                            <label class="custom-file-label" for="inputGroupFile01">...</label>
+                        </div>
+                    </div>
+                    <!-- <div class="campo">
+                                        <label class="campo__label" for="msg">Mensaje:</label>
+                                        <textarea class="campo__field campo__field--textarea" id="msg" cols="0" rows="3"
+                                            placeholder="   Escribe tu mensaje"></textarea>
+                                    </div> -->
+                
+                    <!--ETIQUETA DEL BOTÓN ENVIAR-->
+                    <div class="campo">
+                        <input type="submit" value="Enviar" class="boton_submit">
+                    </div>
+                
+                </form>
+            </header>
+
+            <!--ETIQUETA DEL PIE DE PÁGINA -->
+            <footer class="pie">
+                <!--ETIQUETA BARRA y TITULO -->
+                <div class="bar">
+                    <a href="index.html" class="logo">
+                        <h1 class=""><span class="logo__bold">CARNETS</span></h1>
+                    </a>
+
+                    <div class="autor">
+                        <p>Copyright &copy; Ucrish 2024</p>
+                    </div>
+
+                </div>
+            </footer>
+        </div>
+
+
+
+
+    </div>
+
+
+
+    <!--APARTADO DE DOCUMENTOS DE JAVASCRIPT-->
+    <script src="js/material.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
